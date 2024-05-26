@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collections</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css" integrity="sha512-OQDNdI5rpnZ0BRhhJc+btbbtnxaj+LdQFeh0V9/igiEPDiWE2fG+ZsXl0JEH+bjXKPJ3zcXqNyP4/F/NegVdZg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+
+    <!-- Navbar -->
+    <div class="text">
+        <p class="p-text">Free shipping on order above Rs. 999 on prepaid payment</p>
+    </div>
+
+    <nav class="navbar navbar-expand-lg navbar-white bg-white">
+        <div class="container-fluid" style="width: 90%;">
+            <a href="" class="navbar-brand"><img src="img/i1.webp" alt="" style="height: 30px; width: 220px;"></a>
+            <button class="btn btn-toggler offbtn d-lg-none ms-5" data-bs-toggle="offcanvas" data-bs-target="#slidebar" ><span><i class="bi bi-list d-lg-none text-dark ms-5"></i></span></button>
+
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav" style="margin-left: 13%;">
+                    <li class="nav-item"><a href="page1.html" class="nav-link me-3">Gift Store</a></li>
+                    <li class="nav-item"><a href="page2.html" class="nav-link me-3">Home & Decor</a></li>
+                    <li class="nav-item"><a href="page3.html" class="nav-link me-3">Bags & Travel</a></li>
+                    <li class="nav-item"><a href="page4.html" class="nav-link me-3">Watches</a></li>
+                    <li class="nav-item"><a href="page5.html" class="nav-link me-3">Collections</a></li>
+                </ul>
+                    
+            </div>
+            <div class="nav-icon mt-3 ms-auto">
+                <ul class="d-flex">
+                    <input type="text" class="pt-1 pb-1 ps-4 d-sm-none d-lg-flex" placeholder="Serch"><i class="ri-search-line text-secondary d-sm-none d-md-none d-lg-flex " style="position: absolute; margin-top: 5px; margin-left: 5px;"></i>
+                    <li class="list-unstyled ms-3 d-sm-none d-md-none d-lg-flex"><a href="login.html" style="color: black; font-size: 20px;"><i class="bi bi-person"></i></a></li>
+                    <li class="list-unstyled ms-3 d-sm-none d-md-none d-lg-flex"><a href=""
+                        style="color: black; font-size: 20px;" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="bi bi-bag"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav> 
+
+    <!-- offcanvas -->
+
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" style="width: 35%; "
+                aria-labelledby="offcanvasRightLabel">
+                <div class="offcanvas-header">
+                    <h5 id="offcanvasRightLabel" style="border-bottom: 1px solid gray;">ADD TO CART</h5>
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body" style="overflow: scroll;">
+                    <div style="border: 5px solid teal; border-radius: 5px;"></div>
+                    <div  class="" id="cartdatas"></div>
+
+                    <div style=" position: fixed; top: 75%; background-color: white; padding: 10px;">
+                        <input type="text" placeholder="Discount code" style="width: 80%;padding: 10px;">
+                        <button style="border: none; background-color: black; padding: 10px 20px 10px 20px; color: white; width: 19%;">Apply</button>
+                        <div class="d-flex">
+                            <p class="ms-3 mt-3">Discounts</p>
+                            <div class="ms-2" style="margin-top: 20px;">
+                                <i class="bi bi-tag ms-3 bg-light pe-3 p-2"></i><span class=" bg-light p-2">FREE BAG</span><span style="margin-left: 180px;">- ₹ 1,995</span>
+                            </div>
+                        </div>
+                        <button class="mt-3" style="border: none; background-color: black; padding: 10px; color: white; width: 100%;">Checkout.₹ 7,280</button>
+                    </div>
+                </div>
+            </div>
+
+    <div style="border-top: 1px solid rgb(209, 209, 209);"></div>
+    
+    
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="slidebar" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+            <h5 id="offcanvasRightLabel" class="ms-5">Menu</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="navbar-nav" style="margin-left: 10%;">
+                <li class="nav-item"><a href="page1.html" class="nav-link me-3">Gift Store</a></li>
+                <li class="nav-item"><a href="page2.html" class="nav-link me-3">Home & Decor</a></li>
+                <li class="nav-item"><a href="page3.html" class="nav-link me-3">Bags & Travel</a></li>
+                <li class="nav-item"><a href="page4.html" class="nav-link me-3">Watches</a></li>
+                <li class="nav-item"><a href="page5.html" class="nav-link me-3">Collections</a></li>
+            </ul>
+        </div>
+        </div>
+        <div style="text-align: center; font-size: 15px; font-family: sans-serif; padding: 25px;">
+            NEW ARRIVALS
+        </div>
+        <div style="border-top: 1px solid rgb(209, 209, 209);"></div>
+        
+         <!-- Data Fetch -->
+
+        <div id="page-body" ></div>
+
+        <!-- Footer -->
+
+        <div class="footer" style="margin-top: 100px;">
+            <div class="container-fluid" style="width: 95%; padding-top: 5%;">
+                <div class="row">
+                    <div class="col-3 col-sm-6 col-lg-3">
+                        <h6>GET IN TOUCH</h6>
+                        <h6 class="pt-3">Whatsapp: +91 9980127955</h4>
+                        <h6 class="pt-3">Mon-Sat 10AM - 6PM IST</h6>
+                        <h6 class="pt-3">Email: <a href="" class="f-link"><span>Help@Chumbak.In</span></a></h6>
+                        <h6 class="pt-3">Toll Free : INACTIVE</h6>
+                        <div class="icon pt-3">
+                            <a href="" class="f-link"><i class="ri-facebook-fill"></i></a>
+                            <a href="" class="f-link ms-3"><i class="ri-instagram-line"></i></a>
+                        </div>
+                    </div>
+    
+                    <div class="col-2 col-sm-6 col-lg-2">
+                        <h6>NEED HELP</h6>
+                        <a href="" class="f-link"><h6 class="pt-3">FAQs</h6></a>
+                        <a href="" class="f-link"><h6 class="pt-3">Track Order</h6></a>
+                        <a href="" class="f-link"><h6 class="pt-3">Store Locator</h6></a>
+                        <a href="" class="f-link"><h6 class="pt-3">Return & Exchange</h6></a>
+                    </div>
+    
+                    <div class="col-3 col-sm-4 col-lg-3 mt-sm-5 mt-lg-0">
+                        <h6>ABOUT US</h6>
+                        <a href="" class="f-link"><h6 class="pt-3">Our Story</h6></a>
+                        <a href="" class="f-link"><h6 class="pt-3">#WithChumbak Community</h6></a>
+                        <a href="" class="f-link"><h6 class="pt-3">Corporate Gifts</h6></a>
+                    </div>
+    
+                    <div class="col-2 col-sm-4 col-lg-2 mt-sm-5 mt-lg-0">
+                        <h6>COMPANY</h6>
+                        <a href="" class="f-link"><h6 class="pt-3">Privacy Policy</h6></a>
+                        <a href="" class="f-link"><h6 class="pt-3">Terms Of Use</h6></a>
+                        <a href="" class="f-link"><h6 class="pt-3">Contact Us</h6></a>
+                    </div>
+    
+                    <div class="col-2 col-sm-4 col-lg-2 mt-sm-5 mt-lg-0">
+                        <h6>OUR APPS</h6>
+                        <div class="icon pt-3">
+                            <a href="" class="f-link"><i class="ri-apple-fill"></i></a>
+                            <a href="" class="f-link ms-3"><i class="ri-android-fill"></i></a>
+                        </div>
+                    </div>
+    
+                    <div class="f-end mt-5">
+                        <p class="heading text-subdued text-xxs">© 2024 - Chumbak</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="footer-end">
+            <div class="container-fluid" style="width: 90%; padding-top: 40px;">
+                <div class="row">
+                            <div class="col-3 col-sm-6 col-md-4 col-lg-3 mt-sm-5 mt-lg-0">
+                                <a href="" class="f-link"><h6><strong>Gifting</strong></a></h6>
+                                <a href="" class="f-link"><h6 class="pt-2">House Warming Gifts</h6></a>
+                                <a href="" class="f-link"><h6 class="pt-1">Festive Gifting</h6></a>
+                                <a href="" class="f-link"><h6 class="pt-1">E-Gift Cards</h6></a>
+                                <a href="" class="f-link"><h6 class="pt-1">Gifting Accessories</h6></a>
+                                <a href="" class="f-link"><h6 class="pt-1">Corporate Gifting</h6></a>
+                            </div>
+        
+                            <div class="col-2 col-sm-6 col-md-4 col-lg-2 mt-sm-5 mt-lg-0">
+                                <a href="" class="f-link"><h6><strong>Shop By Price</strong></a></h6>
+                                <a href="" class="f-link"><h6 class="pt-2">Gift Under 1000</h6></a>
+                                <a href="" class="f-link"><h6 class="pt-1">Gift Under 2000</h6></a>
+                                <a href="" class="f-link"><h6 class="pt-1">Gift Under 3000</h6></a>
+                            </div>
+                            
+                            <div class="col-3 col-sm-6 col-md-4 col-lg-3 mt-sm-5 mt-lg-0">
+                                <a href="" class="f-link"><h6><strong>Dining Table Accessories</strong></a></h6>
+                                <a href="" class="f-link"><h6 class="pt-2">Crockery Set</h6></a>
+                                <a href="" class="f-link"><h6 class="pt-1">Tableware</h6></a>
+                                <a href="" class="f-link"><h6 class="pt-1">Jars Online</h6></a>
+                                <a href="" class="f-link"><h6 class="pt-1">Buy Bakeware Items</h6></a>
+                            </div>
+        
+                            <div class="col-2 col-sm-6 col-lg-2 col-md-4 mt-sm-5 mt-lg-0">
+                                <a href="" class="f-link"><h6><strong>Home Decor Items</strong></a></h6>
+                                <a href="" class="f-link"><h6 class="pt-2">Table Wall Decor</h6></a>
+                                <a href="" class="f-link"><h6 class="pt-1">Planters And Pots</h6></a>
+                                <a href="" class="f-link"><h6 class="pt-1">Scented Candles</h6></a>
+                                <a href="" class="f-link"><h6 class="pt-1">Trunk Suitcase</h6></a>
+                                <a href="" class="f-link"><h6 class="pt-1">Buy Carpets Online</h6></a>
+                            </div>
+        
+                            <div class="col-2 col-sm-6 col-lg-2 col-md-4 mt-sm-5 mt-lg-0">
+                                <a href="" class="f-link"><h6><strong>Furniture & Furnishing</strong></a></h6>
+                                <a href="" class="f-link"><h6 class="pt-2">Sofas Chairs</h6></a>
+                                <a href="" class="f-link"><h6 class="pt-1">Pouffe</h6></a>
+                                <a href="" class="f-link"><h6 class="pt-1">Breakfast Table</h6></a>
+                                <a href="" class="f-link"><h6 class="pt-1">Cushions Online</h6></a>
+                                <a href="" class="f-link"><h6 class="pt-1">Bed Linen</h6></a>
+                            </div>
+                        
+    
+    
+    
+                            <div class="col-3 mt-5 col-sm-6 col-md-4 col-lg-3">
+                                <a href="" class="f-link"><h6><strong>Chumbak Vintage Collection</strong></a></h6>
+                                <a href="" class="f-link"><h6 class="pt-2">Keyring | Keychains</h6></a>
+                                <a href="" class="f-link"><h6 class="pt-1">Notebook / Stationary</h6></a>
+                                <a href="" class="f-link"><h6 class="pt-1">Buy Coffee Mugs</h6></a>
+                                <a href="" class="f-link"><h6 class="pt-1">Bobble Heads </h6></a>
+                                <a href="" class="f-link"><h6 class="pt-1">Shaped Cushions </h6></a>
+                            </div>
+        
+                            <div class="col-2 mt-5 col-sm-6 col-md-4 col-lg-2">
+                                <a href="" class="f-link"><h6><strong>Handbags For Women</strong></a></h6>
+                                <a href="" class="f-link"><h6 class="pt-2">Backpack For Women</h6></a>
+                                <a href="" class="f-link"><h6 class="pt-1">Tote Bags</h6></a>
+                                <a href="" class="f-link"><h6 class="pt-1">Laptop Bags For Women</h6></a>
+                                <a href="" class="f-link"><h6 class="pt-1">Women's Clutch Wallet</h6></a>
+                            </div>
+        
+                            <div class="col-3 mt-5 col-sm-6 col-md-4 col-lg-3">
+                                <a href="" class="f-link"><h6><strong>Travel Accessories</strong></a></h6>
+                                <a href="" class="f-link"><h6 class="pt-2">Luggage Trolley Bags</h6></a>
+                                <a href="" class="f-link"><h6 class="pt-1">Passport Holders</h6></a>
+                                <a href="" class="f-link"><h6 class="pt-1">Fragrance Perfume</h6></a>
+                                <a href="" class="f-link"><h6 class="pt-1">Women Scarves</h6></a>
+                                <a href="" class="f-link"><h6 class="pt-1">Eyewear Cases</h6></a>
+                            </div>
+        
+                            <div class="col-2 mt-5 col-sm-6 col-md-4 col-lg-2">
+                                <a href="" class="f-link"><h6><strong>Wrist Watches For Women</strong></a></h6>
+                                <a href="" class="f-link"><h6 class="pt-2">Smart Watch For Women</h6></a>
+                                <a href="" class="f-link"><h6 class="pt-1">Stainless Steel Watch</h6></a>
+                                <a href="" class="f-link"><h6 class="pt-1">Metal Strap Watches</h6></a>
+                                <a href="" class="f-link"><h6 class="pt-1">Printed Strap Watches</h6></a>
+                                <a href="" class="f-link"><h6 class="pt-1">Solid Strap Watches</h6></a>
+                            </div>
+                        
+    
+                        <div class="col-12 mt-5">
+                            <h6><strong>Popular Search</strong></h6>
+                            <h6 style="line-height: 25px; text-align: justify;" class="pt-2">Gifts Under 1000 | Gifts for WomenLow Price Gift Items | Laptop Backpack for Women | Laptop Handbags for Women | Laptop Backpack | Laptop Cover | Small Handbags for Women| Handbags for Women | Office Handbags for Womens | Luggage Trolley Bags | Travel Bag for Women | Women's Clutch Wallet | Ladies Clutch Wallet | Stainless Steel Watch | Stainless Steel Watch Strap |Metal Strap Watches |Passport Holder |Passport Holder for Women | Crockery Set | Dining Table Accessories | Table Decoration Items |Home Decor Items | Home Decor Products |Home Decor | Wall Decor Items |Wrist Watches for Women |Smart Watch for Women |Ladies Smart Watch | Traveling Bags</h6>
+                        </div>
+                </div>
+            </div>
+        </div>
+</body>
+</html>
+<script src="index.js"></script>
+<script>
+    function Fetchdata() {
+        fetch("https://web-backend-j72p.onrender.com/Collection")
+            .then((res) => res.json())
+            .then((data) => CardList(data))
+            .catch((err) => console.log(err))
+    }
+
+    Fetchdata()
+
+    function CardList(data) {
+        const store = data.map((el) => SingleCard(el.image1,el.image2,el.name,el.price))
+        document.getElementById("page-body").innerHTML = store.join("")
+    }
+
+    function SingleCard(image1,image2,name,price) {
+        let Card = `
+        <a class="link" href="description.html?name=${encodeURIComponent(name)}&image1=${encodeURIComponent(image1)}&image2=${encodeURIComponent(image2)}&price=${encodeURIComponent(price)}">
+        <div>
+            <div class="hover-switch" style="height: 400px; ">
+            <img src="${image1}" style="height: 400px; ">
+            <img src="${image2}" style="height: 400px;">
+        </div>
+        <div class="g-content" style="font-family: sans-serif; font-size: 15px; margin-top:10px;">
+            <p>${name}</p>
+            <p>${price}</p>
+        </div>
+        </div>
+        </a>
+        `
+
+        return Card;
+    }
+</script>
